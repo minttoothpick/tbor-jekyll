@@ -1,0 +1,14 @@
+$breakpoints: (
+  small:  600px,
+  large: 1200px
+);
+
+$typi: (
+  null:  (16px, 1.4),
+  small: 18px,
+  large: 20px
+);
+
+html {
+  @include typi-base();
+}

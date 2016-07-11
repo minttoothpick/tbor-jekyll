@@ -45,6 +45,7 @@ $on-laptop:        800px;
 @import "normalize";
 @import "susy";
 @import "typi";
+@import "typi-maps";
 // @import
 //         "normalize",
 //         "base",
@@ -60,6 +61,6 @@ $susy: (
 
 @include border-box-sizing;
 
-.page-content {
+.wrapper {
   @include container;
 }
