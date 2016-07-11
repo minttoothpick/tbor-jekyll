@@ -1,12 +1,16 @@
 $breakpoints: (
-  small:  600px,
-  large: 1200px
+  small:  $breakpoint-sm,
+  medium: $breakpoint-md,
+  large:  $breakpoint-lg
 );
 
+// Baseline = $font-size-base * $line-height-base
+// Use vr(x) for multiples of baseline
 $typi: (
-  null:  (16px, 1.4),
-  small: 18px,
-  large: 20px
+  null:  ($font-size-base, $line-height-base),
+  small:  $font-size-sm,
+  medium: $font-size-md,
+  large:  $font-size-lg
 );
 
 $h1-font-map: (
@@ -16,8 +20,19 @@ $h1-font-map: (
 
 html {
   @include typi-base();
+  font-family: $base-font-family;
 }
 
 h1 {
   @include typi($h1-font-map);
+}
+
+ul, ol {
+  padding: 0;
+  list-style-position: outside;
+  margin-left: 1rem;
+  margin-left: 1.7rem; /* 1rem + 0.5 baseline */
+}
+li + li {
+  margin-top: 0.35rem; /* 0.25 baseline */
 }
