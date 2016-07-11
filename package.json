@@ -2,9 +2,16 @@
   "name": "mint-jekyll",
   "version": "0.0.1",
   "description": "",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Jeremy Jones <jeroum@gmail.com>",
   "license": "ISC",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "susy": "^2.2.12"
+  }
 }
