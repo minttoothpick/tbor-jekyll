@@ -1,14 +1,13 @@
 # Site settings
-title: Mint-Jekyll
+title: The Beast of Riverdale
 author: Jeremy Jones
-username: minttoothpick
 email: jeroum@gmail.com
-description: "Blog and internet home for Jeremy Jones."
-tagline: "Brief tagline"
+description: ""
+tagline: ""
 baseurl: ""
 url: ""
-twitter_username: minttoothpick
-github_username:  minttoothpick
+twitter_username:
+github_username:
 timezone: America/New_York
 
 # Build settings
