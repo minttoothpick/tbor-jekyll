@@ -50,6 +50,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 var sassSources = [
   'node_modules/susy/sass',
   'node_modules/mappy-breakpoints',
+  'node_modules/modularscale-sass/stylesheets',
   'node_modules/typi/scss',
   'scss'
 ];

@@ -1,11 +1,12 @@
 @charset "utf-8";
 
 // @import "https://fonts.googleapis.com/css?family=Athiti|Inconsolata|Secular+One";
-@import "variables";
+@import "mappy-breakpoints";
+@import "modular-scale";
 @import "normalize";
 @import "susy";
+@import "variables";
 @import "susy-maps";
-@import "mappy-breakpoints";
 @import "typi";
 @import "typi-maps";
 
@@ -17,7 +18,7 @@
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }

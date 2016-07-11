@@ -13,6 +13,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "mappy-breakpoints": "^0.2.3",
+    "modularscale-sass": "^2.1.1",
     "susy": "^2.2.12",
     "typi": "^2.3.0"
   }
