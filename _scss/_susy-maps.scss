@@ -1,0 +1,11 @@
+$susy: (
+  columns: 12,
+  container: $max-width,
+  global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+.wrapper {
+  @include container;
+}

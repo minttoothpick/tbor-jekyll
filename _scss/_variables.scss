@@ -1,0 +1,31 @@
+/**
+ * Typography
+ */
+$base-font-family: "Inconsolata", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-base: 16px;
+$font-size-sm:   18px;
+$font-size-md:   20px;
+$font-size-lg:   24px;
+
+$line-height-base: 1.4;
+
+/**
+ * Colors
+ */
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+
+/**
+ * Breakpoints
+ */
+$breakpoint-sm:  600px;
+$breakpoint-md:  960px;
+$breakpoint-lg: 1200px;
+$max-width:     1200px;
