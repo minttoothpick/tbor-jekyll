@@ -47,10 +47,17 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
+var sassSources = [
+  'node_modules/susy/sass',
+  'node_modules/mappy-breakpoints',
+  'node_modules/typi/scss',
+  'scss'
+];
+
 gulp.task('sass', function() {
   return gulp.src('_scss/main.scss')
     .pipe(sass({
-      includePaths: ['node_modules/susy/sass', 'node_modules/typi/scss', 'scss'],
+      includePaths: sassSources,
       onError: browserSync.notify
     }))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))

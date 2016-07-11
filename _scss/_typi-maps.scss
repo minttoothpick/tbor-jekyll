@@ -4,6 +4,8 @@ $breakpoints: (
   large:  $breakpoint-lg
 );
 
+$typi-breakpoint: mappy-breakpoints;
+
 // Baseline = $font-size-base * $line-height-base
 // Use vr(x) for multiples of baseline
 $typi: (
