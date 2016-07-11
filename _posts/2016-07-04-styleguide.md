@@ -192,6 +192,172 @@ Monospace Text wrapped in "pre" tags:
 
 * * *
 
-# Media and Form Elements
+<h1 id="media-elements">Media</h1>
 
-The remaining sections contain elements that cannot be represented in markdown. Please consult [the HTML version](https://github.com/bryanbraun/poor-mans-styleguide/blob/gh-pages/index.html), to see these elements.
+<h2>The Audio Element:</h2>
+<audio controls>
+  <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
+  <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+
+<h2>The Video Element:</h2>
+<video width="320" height="240" controls>
+  <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
+  <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+<h2>Embedded content:</h2>
+
+<p>YouTube video (iframe):</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
+
+<hr />
+
+<h1 id="form-elements">Form Elements</h1>
+
+<p>The Fieldset:</p>
+<fieldset>
+  <legend>Legend</legend>
+
+  <p>The Form:</p>
+
+  <form>
+    <p><label for="text_field">Text Field:</label><br />
+      <input type="text" id="text_field" />
+    </p>
+
+    <p><label for="text_field_disabled">Disabled Text Field:</label><br />
+      <input type="text" id="text_field_disabled" disabled value="I'm disabled" />
+    </p>
+
+    <p><label for="text_field_readonly">Readonly Text Field:</label><br />
+      <input type="text" id="text_field_readonly" readonly value="I'm readonly" />
+    </p>
+
+    <p><label for="text_area">Text Area:</label><br />
+      <textarea id="text_area"></textarea>
+    </p>
+
+    <p><label for="text_area_disabled">Disabled Text Area:</label><br />
+      <textarea id="text_area_disabled" disabled>I'm disabled</textarea>
+    </p>
+
+    <p><label for="text_area">Readonly Text Area:</label><br />
+      <textarea id="text_area" readonly>I'm readonly</textarea>
+    </p>
+
+    <p><label for="select_element">Select Element:</label><br />
+      <select id="select_element">
+        <optgroup label="Option Group 1">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </optgroup>
+        <optgroup label="Option Group 2">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3" disabled>Disabled Option</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p><label for="select_element_disabled">Disabled Select Element:</label><br/>
+      <select id="select_element_disabled" disabled>
+        <option value="1">Unselectable Option</option>
+        <option value="2">This option should not even be seen</option>
+      </select>
+    </p>
+
+    <p>Radio Buttons:<br />
+      <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_4" disabled /> Radio Disabled</label><br/>
+    </p>
+
+    <p>Checkboxes:<br />
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled /> Checkbox Disabled</label><br/>
+    </p>
+
+    <p><label for="password">Password:</label><br />
+      <input type="password" class="password" id="password" />
+    </p>
+
+    <p><label for="file">File Input:</label><br />
+      <input type="file" class="file" id="file" />
+    </p>
+
+    <h3>HTML5-specific Form Elements</h3>
+
+    <p><label for="email">Email:</label><br />
+      <input type="email" id="email" />
+    </p>
+
+    <p><label for="url">URL:</label><br />
+      <input type="url" id="url" />
+    </p>
+
+    <p><label for="tel">Telephone:</label><br />
+      <input type="tel" id="tel" />
+    </p>
+
+    <p><label for="number">Number:</label><br />
+      <input type="number" id="number" min="0" max="10" step="1" value="5" />
+    </p>
+
+    <p><label for="search">Search:</label><br />
+      <input type="search" id="search" />
+    </p>
+
+    <p><label for="date">Date:</label><br />
+      <input type="date" id="date" />
+    </p>
+
+    <p><label for="time">Time:</label><br />
+      <input type="time" id="time" />
+    </p>
+
+    <p><label for="color">Color:</label><br />
+      <input type="color" id="color" />
+    </p>
+
+    <p><label for="datalist">Datalist:</label><br />
+      <input list="browsers" name="browser" type="datalist" id="datalist" />
+      <datalist id="browsers">
+        <option value="Internet Explorer" />
+        <option value="Firefox" />
+        <option value="Chrome" />
+        <option value="Opera" />
+        <option value="Safari" />
+      </datalist>
+    </p>
+
+    <p><label for="range">Range:</label><br />
+      <input type="range" id="range" name="points" min="1" max="10" />
+    </p>
+
+    <p><label for="output">Output:</label><br />
+      <output name="result" id="output">42</output>
+    </p>
+
+    <p><label for="progress">Progress:</label><br />
+      <progress id="progress" value="65" max="100"></progress>
+    </p>
+
+    <p><label for="meter">Meter:</label><br />
+      <meter id="meter" min="200" max="500" value="350">350 degrees</meter>
+    </p>
+
+    <p>
+      <button class="button">Button Element</button>
+      <input class="button" type="reset" value="Clear" />
+      <input class="button" type="submit" value="Submit" />
+    </p>
+  </form>
+
+</fieldset>
