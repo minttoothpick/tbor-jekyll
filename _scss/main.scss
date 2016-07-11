@@ -42,10 +42,23 @@ $on-laptop:        800px;
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "normalize",
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "susy";
+@import "normalize";
+// @import
+//         "normalize",
+//         "base",
+//         "layout",
+//         "syntax-highlighting"
+// ;
+
+$susy: (
+  columns: 12,
+  container: 1200px,
+  global-box-sizing: border-box
+);
+
+@include border-box-sizing;
+
+.page-content {
+  @include container;
+}
