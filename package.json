@@ -1,0 +1,10 @@
+{
+  "name": "mint-jekyll",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+  },
+  "author": "Jeremy Jones <jeroum@gmail.com>",
+  "license": "ISC",
+  "private": true
+}
