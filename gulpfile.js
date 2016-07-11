@@ -50,7 +50,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function() {
   return gulp.src('_scss/main.scss')
     .pipe(sass({
-      includePaths: ['scss'],
+      includePaths: ['node_modules/susy/sass', 'scss'],
       onError: browserSync.notify
     }))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
