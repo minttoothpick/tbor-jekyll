@@ -6,9 +6,14 @@ description: ""
 tagline: ""
 baseurl: ""
 url: ""
-twitter_username:
-github_username:
+twitter_username: ""
+github_username: ""
+facebook_username: ""
 timezone: America/New_York
+
+# Soundcloud
+soundcloud_ids:
+  - 224147716
 
 # Build settings
 markdown: kramdown
