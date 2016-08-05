@@ -1,7 +1,8 @@
 /**
  * Typography
  */
-$base-font-family: "Inconsolata", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base: "Inconsolata", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Vesper Libre";
 
 $font-size-base: 16px;
 $font-size-sm:   16px;
@@ -9,9 +10,16 @@ $font-size-md:   18px;
 $font-size-lg:   18px;
 
 $line-height-base: 1.4;
+$base-font-weight: 400;
 
 // Modular Scale
 $ms-ratio: 1.33;
+
+$small-font-size: 80%;
+
+
+
+$spacing-unit: vr(2);
 
 
 /**
@@ -32,4 +40,4 @@ $grey-color-dark:  darken($grey-color, 25%);
 $breakpoint-sm:  600px;
 $breakpoint-md:  960px;
 $breakpoint-lg: 1200px;
-$max-width:     1200px;
+$content-width: 1200px;
