@@ -10,6 +10,8 @@ twitter_username: ""
 github_username: ""
 facebook_username: ""
 timezone: America/New_York
+modular_scale: http://www.modularscale.com/?1&em&1.333&web&text
+text_skew_v: -8.0
 
 # Soundcloud
 soundcloud_ids:
