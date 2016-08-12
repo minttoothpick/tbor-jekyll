@@ -8,9 +8,12 @@
 @import "variables";
 @import "base";
 @import "susy-maps";
-@import "typi";
-@import "typi-maps";
+// @import "typi";
+// @import "typi-maps";
 @import "layout";
+
+@import "header";
+@import "footer";
 
 // Use media queries like this:
 // @include media-query($on-palm) {

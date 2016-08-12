@@ -2,24 +2,28 @@
 layout: default
 ---
 
-<div class="home">
+<section class="Section Section--latesttrack">
 
-  <div id="audioPlayer"></div>
+  {% for post in site.posts %}
+    {% if post.type == 'track' %}
 
-  <h1 class="page-heading">Posts</h1>
+      <h2 class="Section-title">{{ post.title }}</h2>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <div id="audioPlayer"></div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    {% endif %}
+  {% endfor %}
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</section>
 
-</div>
+<section class="Section Section--about">
+
+  <h2 class="Section-title">Origin Story</h2>
+
+</section>
+
+<section class="Section Section--social">
+
+  <h2 class="Section-title">Elsewhere</h2>
+
+</section>

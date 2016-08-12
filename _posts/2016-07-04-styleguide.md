@@ -3,6 +3,7 @@ layout: post
 title:  "Styleguide"
 date:   2016-07-04 09:28:46 -0400
 categories: 
+type: blogpost
 ---
 # Heading 1
 

@@ -1,8 +1,8 @@
 /**
  * Typography
  */
-$font-family-base: "Inconsolata", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif: "Vesper Libre";
+$font-family-base: "Space Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Space Mono";
 
 $font-size-base: 16px;
 $font-size-sm:   16px;
@@ -25,8 +25,8 @@ $spacing-unit: vr(2);
 /**
  * Colors
  */
-$text-color:       #111;
-$background-color: #fdfdfd;
+$text-color:       #fdfdfd;
+$background-color: #21174C;
 $brand-color:      #2a7ae2;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

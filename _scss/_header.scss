@@ -1,0 +1,18 @@
+.Header-inner {
+  @include container;
+  @extend %clearfix;
+}
+
+.Header-titleLink {
+  width: 14rem;
+  width: span(2);
+  // margin: 0 auto;
+  display: block;
+}
+
+.lead {
+  // @include span(8 of 12);
+  width: span(8);
+  // @include typi($h1-map);
+  font-family: $font-family-serif;
+}
