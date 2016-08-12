@@ -1,3 +1,7 @@
+.Header {
+
+}
+
 .Header-inner {
   @include container;
   @extend %clearfix;
