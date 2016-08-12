@@ -13,10 +13,6 @@ timezone: America/New_York
 modular_scale: http://www.modularscale.com/?1&em&1.333&web&text
 text_skew_v: -8.0
 
-# Soundcloud
-soundcloud_ids:
-  - 224147716
-
 # Build settings
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]

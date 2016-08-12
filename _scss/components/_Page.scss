@@ -1,4 +1,4 @@
 .Page {
-  @include container;
+  @include container(80rem);
   @extend %clearfix;
 }

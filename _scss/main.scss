@@ -8,12 +8,14 @@
 @import "variables";
 @import "base";
 @import "susy-maps";
+@import "fonts";
 // @import "typi";
 // @import "typi-maps";
 
 @import "components/Page";
 @import "components/Header";
 @import "components/Footer";
+@import "components/Section";
 
 // Use media queries like this:
 // @include media-query($on-palm) {

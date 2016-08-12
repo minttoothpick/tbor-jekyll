@@ -1,0 +1,25 @@
+$font-path-file-name: '{{ site.baseurl }}/fonts';
+
+@font-face {
+  font-family: 'infinibold';
+  src: url('infini-gras-webfont.woff2') format('woff2'),
+       url('infini-gras-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'infiniitalic';
+  src: url('infini-italique-webfont.woff2') format('woff2'),
+       url('infini-italique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'infiniregular';
+  src: url('infini-romain-webfont.woff2') format('woff2'),
+       url('infini-romain-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
