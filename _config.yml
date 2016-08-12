@@ -20,3 +20,6 @@ soundcloud_ids:
 # Build settings
 markdown: kramdown
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+collections:
+  - tracks

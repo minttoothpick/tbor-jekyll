@@ -4,14 +4,12 @@ layout: default
 
 <section class="Section Section--latesttrack">
 
-  {% for post in site.posts %}
-    {% if post.type == 'track' %}
+  {% for track in site.tracks %}
 
-      <h2 class="Section-title">{{ post.title }}</h2>
+    <h2 class="Section-title">{{ track.title }}</h2>
 
-      <div id="audioPlayer"></div>
+    <div id="audioPlayer"></div>
 
-    {% endif %}
   {% endfor %}
 
 </section>
