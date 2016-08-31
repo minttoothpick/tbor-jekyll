@@ -1,14 +1,11 @@
 .Section {
 
-  & .Section--latestTrack {
-    @include span(5 of 12 last);
+  &.Section--latestTrack {
+
   }
 
-}
+  &.Section--about {
+    // @include span(12 of 12);
+  }
 
-.Section-title {
-  font-family: $font-family-serif;
-  font-family: 'infinibold';
-  font-size: 4.209rem;
-  line-height: 1.1;
 }

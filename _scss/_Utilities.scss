@@ -5,6 +5,7 @@
 
 .u-cf::after {
   content: "";
-  display: table;
+  // display: table;
+  display: block; /* http://cssmojo.com/the-very-latest-clearfix-reloaded/ */
   clear: both;
 }

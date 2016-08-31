@@ -1,4 +1,25 @@
 .Page {
-  @include container(80rem);
-  @extend %clearfix;
+  // @include container(80rem);
+  // @extend %clearfix;
+
+  // background-image: url(/images/textureCenter.svg), url(/images/circle.svg);
+  // background-repeat: no-repeat;
+  // background-position: 50% -200px, 100% 40px;
+  // background-size: 1600px, 31.475rem;
+
+  // background-image: url(/images/circle.svg);
+  // background-repeat: no-repeat;
+  // background-position: 100% 240px;
+  // // background-size: 31.475rem;
+  // background-size: 41.956rem;
+  // background-position: 5% 7.478rem;
+  // background-position: 5% -7.478rem;
+}
+
+.Content {
+  display: flex;
+}
+
+.area {
+  flex: 1;
 }

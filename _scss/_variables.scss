@@ -1,7 +1,7 @@
 /**
  * Typography
  */
-$font-family-base: "Space Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-base: "Inconsolata", monospace;
 $font-family-serif: "Space Mono";
 
 $font-size-base: 16px;
@@ -9,7 +9,7 @@ $font-size-sm:   16px;
 $font-size-md:   18px;
 $font-size-lg:   18px;
 
-$line-height-base: 1.4;
+$line-height-base: 1.3;
 $base-font-weight: 400;
 
 // Modular Scale
@@ -25,8 +25,8 @@ $spacing-unit: vr(2);
 /**
  * Colors
  */
-$text-color:       #fdfdfd;
-$background-color: #21174C;
+$text-color:       #FFDFE5;
+$background-color: #150510;
 $brand-color:      #2a7ae2;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

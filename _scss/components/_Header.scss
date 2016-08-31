@@ -1,17 +1,43 @@
-.Header {
-  @include span(7 of 12);
+body {
+  background-image: url(/images/epizootic.png);
+  background-size: 80vw;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .Header-inner {
-
+  width: 20vw;
+  margin: auto;
+  padding-top: 26vw;
 }
 
-.Header-titleLink {
-  // margin: 0 auto;
-  display: block;
-}
+// .Header {
+//   @include container(74.551rem);
+//   @extend %clearfix;
+//   padding-top: 7.478rem;
+// }
 
-.lead {
-  // @include typi($h1-map);
-  font-family: $font-family-serif;
-}
+// .Header-inner {
+//   @include span(4 of 12);
+// }
+
+// .Header-titleLink {
+//   // margin: 0 auto;
+//   display: block;
+// }
+
+// .Header-logo {
+//   max-width: 31.475rem;
+//   max-width: 100%;
+//   // width: 31.475rem;
+//   // float: right;
+// }
+
+// .Header-about {
+//   @include span(6 of 12);
+// }
+
+// .Header-aboutText {
+//   font-size: 1.133rem;
+//   max-width: 31.475rem;
+// }
