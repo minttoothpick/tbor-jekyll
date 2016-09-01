@@ -33,14 +33,6 @@
   display: block;
   text-align: right;
   padding-top: 1.8rem;
-  line-height: 1.4;
-  font-size: $font-size-base*1.2;
-  text-transform: uppercase;
-  color: darken($text-color, 5%);
-
-  &:visited, &:hover, &:active {
-    color: inherit;
-  }
 }
 
 .LatestTrack-embed {
@@ -80,12 +72,4 @@
 
 .Social-item {
   flex: 1;
-  font-size: $font-size-base*1.2;
-  line-height: 1.4;
-  color: darken($text-color, 5%);
-  text-transform: uppercase;
-
-  &:visited, &:hover, &:active {
-    color: inherit;
-  }
 }
