@@ -16,14 +16,31 @@
   width: 87.5%;
 }
 
+.LatestTrack-text {
+  width: 50%;
+  float: left;
+  padding-right: 2.5rem;
+}
+
 .LatestTrack-title {
   font-size: $font-size-base*8;
   font-weight: 700;
   line-height: 0.8;
-  width: 50%;
   text-indent: -0.51em;
-  float: left;
-  padding-right: 2.5rem;
+}
+
+.LatestTrack-moreLink {
+  display: block;
+  text-align: right;
+  padding-top: 1.8rem;
+  line-height: 1.4;
+  font-size: $font-size-base*1.2;
+  text-transform: uppercase;
+  color: darken($text-color, 5%);
+
+  &:visited, &:hover, &:active {
+    color: inherit;
+  }
 }
 
 .LatestTrack-embed {
@@ -68,7 +85,7 @@
   color: darken($text-color, 5%);
   text-transform: uppercase;
 
-  &:visited {
-    color: darken($text-color, 5%);
+  &:visited, &:hover, &:active {
+    color: inherit;
   }
 }

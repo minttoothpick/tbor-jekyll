@@ -8,7 +8,13 @@ layout: default
 
     <h2 class="Content-sectionTitle">Latest Track</h2>
 
-    <h3 class="LatestTrack-title">{{ track.title }}</h3>
+    <div class="LatestTrack-text">
+
+      <h3 class="LatestTrack-title">{{ track.title }}</h3>
+
+      <a href="{{ site.soundcloud_url }}" class="LatestTrack-moreLink">More on SoundCloud ⟶</a>
+
+    </div>
 
     <div id="audioPlayer" class="LatestTrack-embed">
       {{ track.content }}
