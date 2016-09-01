@@ -1,4 +1,17 @@
 /**
+ * Box sizing
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+
+/**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -23,6 +36,13 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+
+  background-image: url(/images/epizootic2.png);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: -14rem -2rem;
+  // background-position: -10vw -5vw;
 }
 
 

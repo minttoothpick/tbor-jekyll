@@ -1,43 +1,17 @@
-body {
-  background-image: url(/images/epizootic.png);
-  background-size: 80vw;
+.Header {
+  background-image: url(/images/spatter.png);
+  background-size: 38rem;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 70%;
+  padding-top: 28vw;
+  padding-bottom: 10vw;
 }
 
 .Header-inner {
-  width: 20vw;
+  width: 12.5rem;
   margin: auto;
-  padding-top: 26vw;
+  opacity: 0;
+  animation: fadeIn ease-in 1, moveUp ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
 }
-
-// .Header {
-//   @include container(74.551rem);
-//   @extend %clearfix;
-//   padding-top: 7.478rem;
-// }
-
-// .Header-inner {
-//   @include span(4 of 12);
-// }
-
-// .Header-titleLink {
-//   // margin: 0 auto;
-//   display: block;
-// }
-
-// .Header-logo {
-//   max-width: 31.475rem;
-//   max-width: 100%;
-//   // width: 31.475rem;
-//   // float: right;
-// }
-
-// .Header-about {
-//   @include span(6 of 12);
-// }
-
-// .Header-aboutText {
-//   font-size: 1.133rem;
-//   max-width: 31.475rem;
-// }

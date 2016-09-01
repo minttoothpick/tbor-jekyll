@@ -1,0 +1,74 @@
+.Content-sectionTitle {
+  // transform: rotate(90deg);
+  // transform-origin: left top;
+  text-transform: uppercase;
+  // font-weight: 700;
+  font-size: $font-size-base*1.2;
+  line-height: 1.4;
+  color: #612093;
+}
+
+
+.LatestTrack {
+  // padding-left: 36%;
+  padding-left: 12.5%;
+  // padding-left: 25%;
+  width: 87.5%;
+}
+
+.LatestTrack-title {
+  font-size: $font-size-base*8;
+  font-weight: 700;
+  line-height: 0.8;
+  width: 50%;
+  text-indent: -0.51em;
+  float: left;
+  padding-right: 2.5rem;
+}
+
+.LatestTrack-embed {
+  width: 50%;
+  float: left;
+}
+
+
+.About {
+  padding-top: 9.063rem;
+  padding-top: 5rem;
+  // padding-left: 12.5%;
+  padding-left: 25%;
+}
+
+.About-paragraph {
+  padding-top: 0.4rem;
+  padding-bottom: 0.8rem;
+  font-size: $font-size-base*1.4;
+  line-height: 1.1;
+  max-width: 55rem;
+  color: darken($text-color, 5%);
+}
+
+
+.Social {
+  display: flex;
+  padding: 5rem 0;
+  text-align: center;
+  max-width: 75%;
+  margin: auto;
+}
+
+.Social-title {
+  flex: 1;
+}
+
+.Social-item {
+  flex: 1;
+  font-size: $font-size-base*1.2;
+  line-height: 1.4;
+  color: darken($text-color, 5%);
+  text-transform: uppercase;
+
+  &:visited {
+    color: darken($text-color, 5%);
+  }
+}

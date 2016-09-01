@@ -1,21 +1,24 @@
 @charset "utf-8";
 
-// @import "https://fonts.googleapis.com/css?family=Athiti|Inconsolata|Secular+One";
-@import "mappy-breakpoints";
-@import "modular-scale";
+
+
+/**
+ * Basics and utilities
+ */
 @import "normalize";
-@import "susy";
 @import "variables";
 @import "base";
-@import "susy-maps";
-@import "fonts";
-// @import "typi";
-// @import "typi-maps";
 @import "Utilities";
 
-@import "components/Page";
+
+
+/**
+ * Components
+ */
+@import "components/Animations";
 @import "components/Header";
 @import "components/Footer";
+@import "components/Content";
 @import "components/Section";
 
 // Use media queries like this:

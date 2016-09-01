@@ -2,16 +2,16 @@
 title: The Beast of Riverdale
 author: Jeremy Jones
 email: jeroum@gmail.com
-description: ""
-tagline: ""
-baseurl: ""
-url: ""
-twitter_username: ""
-github_username: ""
-facebook_username: ""
+description:
+baseurl:
+url:
+facebook_url: https://www.facebook.com/pages/The-Beast-of-Riverdale/389262077838744
+soundcloud_url: https://soundcloud.com/thebeastofriverdale/
+youtube_url: ""
+booking_email: thebeastofriverdale@gmail.com
+google_analytics: UA-55885737-1
 timezone: America/New_York
-modular_scale: http://www.modularscale.com/?1&em&1.333&web&text
-text_skew_v: -8.0
+# modular_scale: http://www.modularscale.com/?1&em&1.333&web&text
 
 # Build settings
 markdown: kramdown
