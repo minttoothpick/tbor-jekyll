@@ -58,6 +58,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: sassSources,
+      outputStyle: 'compressed',
       onError: browserSync.notify
     }))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
