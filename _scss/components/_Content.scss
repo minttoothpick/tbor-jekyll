@@ -80,6 +80,27 @@
 
     @media (min-width: 900px) {
       padding-bottom: 100%;
+      transform: translateZ(-100px) translateY(-4rem) rotateX(25deg) rotateY(-15deg);
+      transition: transform 1s ease;
+      box-shadow: 2rem 3rem 50px rgba(97,32,147,0.25);
+      outline: 1px solid transparent;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image:
+          linear-gradient(
+            to bottom right,
+            transparent 60%,
+            rgba(21,5,16,0.5)
+          );
+        mix-blend-mode: multiply;
+        pointer-events: none;
+      }
     }
 
     iframe {
