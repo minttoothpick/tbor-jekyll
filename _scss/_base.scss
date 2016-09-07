@@ -30,19 +30,15 @@ body {
   font: $base-font-weight #{$font-size-base}/#{$line-height-base} $font-family-base;
   color: $text-color;
   background-color: $background-color;
+  text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
-
-  background-image: url(/images/epizootic2.png);
+  background-image: url(/images/epizootic.jpg);
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: -14rem -2rem;
-  // background-position: -10vw -5vw;
 }
 
 
