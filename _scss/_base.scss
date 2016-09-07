@@ -29,16 +29,20 @@ dl, dd, ol, ul, figure {
 body {
   font: $base-font-weight #{$font-size-base}/#{$line-height-base} $font-family-base;
   color: $text-color;
-  background-color: $background-color;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
-  background-image: url(/images/epizootic.jpg);
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  background-position: -14rem -2rem;
+
+  background-color: $background-color;
+
+  @media (min-width: 800px) {
+    background-image: url(/images/epizootic.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: -14rem -2rem;
+  }
 }
 
 
