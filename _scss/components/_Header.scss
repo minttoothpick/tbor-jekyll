@@ -1,0 +1,23 @@
+.Header {
+  background-image: url(/images/spatter.png);
+  background-size: 38rem;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  padding-top: 28vw;
+  padding-bottom: 10vw;
+  opacity: 0;
+  animation: fadeIn ease-in-out 1;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+}
+
+.Header-inner {
+  width: 12.5rem;
+  margin: auto;
+  // opacity: 0;
+  animation: moveUp ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  transform: translate3d(0, 20px, 0);
+}

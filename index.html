@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+{% for track in site.tracks limit:1 %}
+
+  <section class="LatestTrack LatestTrack--{{ track.slug }} u-cf">
+
+    <h2 class="Content-sectionTitle">Latest Track</h2>
+
+    <div class="LatestTrack-text">
+
+      <h3 class="LatestTrack-title">{{ track.title }}</h3>
+
+    </div>
+
+    <div id="audioPlayer" class="LatestTrack-embed">
+      <div class="LatestTrack-embedInner">
+        <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ track.soundcloud_id }}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true&amp;buying=false&amp;liking=false&amp;download=false&amp;show_playcount=false"></iframe>
+      </div>
+    </div>
+
+    <a href="{{ site.soundcloud_url }}" class="LatestTrack-moreLink">More on SoundCloud ⟶</a>
+
+  </section>
+
+{% endfor %}
+
+<section class="About">
+
+  <h2 class="Content-sectionTitle">Origin Story</h2>
+
+  <p class="About-paragraph">The Beast of Riverdale is a five piece post-indie-electro-rock band from Asheville, NC that thrives on being different and breaking the boundaries, or setting arbitrary boundaries that have no business being bounded by binding.</p>
+
+  <p class="About-paragraph">After the members of the Asheville-based band The Real Local Singles were killed in a ballooning accident indirectly caused by Phil Collins, their coagulated soul material fell to Earth, and in its own sweet time, divided and reformed as The Beast of Riverdale. It’s all pretty self explanatory.</p>
+
+</section>
+
+<section class="Social">
+
+  <h2 class="Content-sectionTitle Social-title">Elsewhere</h2>
+
+  <a href="{{ site.facebook_url }}" class="Social-item">Facebook</a>
+
+  <a href="{{ site.youtube_url }}" class="Social-item">YouTube</a>
+
+  <a href="{{ site.soundcloud_url }}" class="Social-item">SoundCloud</a>
+
+  <a href="mailto:{{ site.booking_email }}" class="Social-item">Booking</a>
+
+</section>

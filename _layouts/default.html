@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="Page">
+
+      {% include header.html %}
+
+      <main class="Content">
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+
+    </div>
+
+    <style>
+      p, li, dd {
+        rag-adjust: dashes;
+      }
+      .LatestTrack-title {
+        kerning-pairs: rl -0.12em,
+                       li -0.07em,
+                       in -0.06em,
+                       ng -0.01em,
+                       ar -0.05em,
+                       rd -0.04em,
+                       da -0.02em,
+                       My  0.02em,
+                       Wa -0.02em,
+                       en -0.03em,
+                       de -0.02em;
+      }
+    </style>
+    <script src="{{ "/js/type.js" | prepend: site.baseurl }}"></script>
+
+  </body>
+
+</html>

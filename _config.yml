@@ -1,0 +1,21 @@
+# Site settings
+title: The Beast of Riverdale
+author: Jeremy Jones
+email: jeroum@gmail.com
+description:
+baseurl: "/tbor-jekyll"
+url: "http://minttoothpick.github.io/tbor-jekyll"
+facebook_url: https://fb.me/thebeastofriverdale
+soundcloud_url: https://soundcloud.com/thebeastofriverdale/
+youtube_url: ""
+booking_email: thebeastofriverdale@gmail.com
+google_analytics: UA-55885737-1
+timezone: America/New_York
+# modular_scale: http://www.modularscale.com/?1&em&1.333&web&text
+
+# Build settings
+markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+collections:
+  - tracks
