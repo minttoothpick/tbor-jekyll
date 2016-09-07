@@ -2,6 +2,7 @@ var gulp         = require('gulp'),
     browserSync  = require('browser-sync'),
     sass         = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps   = require('gulp-sourcemaps'),
     cp           = require('child_process');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -48,21 +49,19 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 var sassSources = [
-  'node_modules/susy/sass',
-  'node_modules/mappy-breakpoints',
-  'node_modules/modularscale-sass/stylesheets',
-  'node_modules/typi/scss',
   '_scss',
   '_scss/components'
 ];
 
 gulp.task('sass', function() {
   return gulp.src('_scss/main.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: sassSources,
       onError: browserSync.notify
     }))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('css'));
