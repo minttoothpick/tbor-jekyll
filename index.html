@@ -12,13 +12,15 @@ layout: default
 
       <h3 class="LatestTrack-title">{{ track.title }}</h3>
 
-      <a href="{{ site.soundcloud_url }}" class="LatestTrack-moreLink">More on SoundCloud ⟶</a>
-
     </div>
 
     <div id="audioPlayer" class="LatestTrack-embed">
-      {{ track.content }}
+      <div class="LatestTrack-embedInner">
+        <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{ track.soundcloud_id }}&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true&amp;buying=false&amp;liking=false&amp;download=false&amp;show_playcount=false"></iframe>
+      </div>
     </div>
+
+    <a href="{{ site.soundcloud_url }}" class="LatestTrack-moreLink">More on SoundCloud ⟶</a>
 
   </section>
 
